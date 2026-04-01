@@ -36,7 +36,7 @@ public class TesteSistema {
 
         //String logradouro, int numero, String complemento, String cep, String bairro, String cidade, String estado
         Endereco objEndereco = new Endereco(
-                texto("-Informações do endereço do colaborador--\nLogradouro:"),
+                texto("--Informações do endereço do colaborador--\nLogradouro:"),
                 inteiro("Número:"),
                 texto("Complemento"),
                 texto("CEP: "),
