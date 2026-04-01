@@ -25,13 +25,33 @@ public class TesteSistema {
 
     public static void main(String[] args) {
         //String nome, int numeroRegistro, String cpf, double valorHora, double quantidadeHora
-        Colaborador objColaborador = new Colaborador();
+        Colaborador objColaborador = new Colaborador(
+                texto("--Informações do colaborador--\nNome:"),
+                inteiro("Nº de registro: "),
+                texto("CPF:"),
+                real("Valor da hora:"),
+                real("Quantidade da hora:")
+        );
+
 
         //String logradouro, int numero, String complemento, String cep, String bairro, String cidade, String estado
-        Endereco objEndereco = new Endereco();
+        Endereco objEndereco = new Endereco(
+                texto("--Informações do endereço do colaborador--\nLogradouro:"),
+                inteiro("Número:"),
+                texto("Complemento"),
+                texto("CEP: "),
+                texto("Bairro: "),
+                texto("Cidade"),
+                texto("Estado")
+        );
 
         //String cnpj, String nomeFantasia, String razaoSocial, String segmento
-        Empresa objEmpresa = new Empresa();
+        Empresa objEmpresa = new Empresa(
+                texto("--Informações da empresa--\nCNPJ: "),
+                texto("Nome fantasia: "),
+                texto("Razão Social: "),
+                texto("Segmento:")
+        );
 
 
 
