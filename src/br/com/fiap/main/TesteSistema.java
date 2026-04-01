@@ -15,6 +15,7 @@ public class TesteSistema {
 
     //int
     static int inteiro(String j) {
+
         return Integer.parseInt(j);
     }
     //double
@@ -27,17 +28,17 @@ public class TesteSistema {
         //String nome, int numeroRegistro, String cpf, double valorHora, double quantidadeHora
         Colaborador objColaborador = new Colaborador(
                 texto("--Informações do colaborador--\nNome:"),
-                inteiro("Nº de registro: "),
+                inteiro(texto("Nº de registro: ")),
                 texto("CPF:"),
-                real("Valor da hora:"),
-                real("Quantidade da hora:")
+                real(texto("Valor da hora:")),
+                real(texto("Quantidade da hora:"))
         );
 
 
         //String logradouro, int numero, String complemento, String cep, String bairro, String cidade, String estado
         Endereco objEndereco = new Endereco(
                 texto("--Informações do endereço do colaborador--\nLogradouro:"),
-                inteiro("Número:"),
+                inteiro(texto("Número:")),
                 texto("Complemento"),
                 texto("CEP: "),
                 texto("Bairro: "),
