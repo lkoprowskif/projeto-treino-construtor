@@ -15,12 +15,13 @@ public class TesteSistema {
 
     //int
     static int inteiro(String j) {
-        return Integer.parseInt(j);
+
+        return Integer.parseInt(JOptionPane.showInputDialog(j));
     }
     //double
     static double real(String j){
 
-        return Double.parseDouble(j);
+        return Double.parseDouble(JOptionPane.showInputDialog(j));
     }
 
     public static void main(String[] args) {
