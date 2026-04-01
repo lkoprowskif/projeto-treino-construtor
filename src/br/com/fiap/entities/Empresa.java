@@ -7,7 +7,7 @@ public class Empresa {
     private String razaoSocial;
     private String segmento;
 
-    //Constructor vazio
+    //Constructor vazioo
     public Empresa() {
     }
     //Constructor cheio

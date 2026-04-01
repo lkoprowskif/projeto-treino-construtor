@@ -9,7 +9,7 @@ public class Colaborador {
     private double quantidadeHora;
     private Endereco endereco;
 
-    //Constructor vazio
+    //Constructor vazioo
     public Colaborador() {
     }
     //Constructor cheio

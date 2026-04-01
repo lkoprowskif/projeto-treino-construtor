@@ -10,7 +10,7 @@ public class Endereco {
     private String cidade;
     private String estado;
 
-    //Constructor vazio
+    //Constructor vazioo
     public Endereco() {
     }
     //Constructor cheio
