@@ -34,7 +34,6 @@ public class TesteSistema {
                 real("Quantidade da hora:")
         );
 
-
         //String logradouro, int numero, String complemento, String cep, String bairro, String cidade, String estado
         Endereco objEndereco = new Endereco(
                 texto("--Informações do endereço do colaborador--\nLogradouro:"),
@@ -45,6 +44,7 @@ public class TesteSistema {
                 texto("Cidade"),
                 texto("Estado")
         );
+        objColaborador.setEndereco(objEndereco);
 
         //String cnpj, String nomeFantasia, String razaoSocial, String segmento
         Empresa objEmpresa = new Empresa(
