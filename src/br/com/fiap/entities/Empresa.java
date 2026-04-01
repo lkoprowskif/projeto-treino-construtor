@@ -7,6 +7,17 @@ public class Empresa {
     private String razaoSocial;
     private String segmento;
 
+    //Constructor vazio
+    public Empresa() {
+    }
+    //Constructor cheio
+    public Empresa(String cnpj, String nomeFantasia, String razaoSocial, String segmento) {
+        this.cnpj = cnpj;
+        this.nomeFantasia = nomeFantasia;
+        this.razaoSocial = razaoSocial;
+        this.segmento = segmento;
+    }
+
     public String getCnpj() {
         return cnpj;
     }

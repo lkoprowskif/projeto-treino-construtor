@@ -9,7 +9,8 @@ import javax.swing.*;
 public class TesteSistema {
     //String
     static String texto(String j){
-       return JOptionPane.showInputDialog(j);
+
+        return JOptionPane.showInputDialog(j);
     }
 
     //int
@@ -18,25 +19,25 @@ public class TesteSistema {
     }
     //double
     static double real(String j){
+
         return Double.parseDouble(j);
     }
 
     public static void main(String[] args) {
-
+        //String nome, int numeroRegistro, String cpf, double valorHora, double quantidadeHora
         Colaborador objColaborador = new Colaborador();
+
+        //String logradouro, int numero, String complemento, String cep, String bairro, String cidade, String estado
         Endereco objEndereco = new Endereco();
+
+        //String cnpj, String nomeFantasia, String razaoSocial, String segmento
         Empresa objEmpresa = new Empresa();
 
-        objColaborador.setNumeroRegistro(inteiro("122343"));
-        objColaborador.setNome(texto("Larissa"));
-        objColaborador.setCpf(texto("123.456.789-10"));
-        objColaborador.setQuantidadeHora(real("6"));
-        objColaborador.setValorHora(real("20.543"));
 
-        objColaborador.setEndereco(objEndereco);
 
-        objEndereco.setLogradouro(texto("Rua Fiap"));
-
+        System.out.println(
+                objColaborador + "" + objEmpresa
+        );
 
     }
 
