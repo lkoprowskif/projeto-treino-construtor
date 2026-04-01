@@ -24,7 +24,7 @@ public class TesteSistema {
     }
 
     public static void main(String[] args) {
-        //String nome, int numeroRegistro, String cpf, double valorHora, double quantidadeHoraa
+        //String nome, int numeroRegistro, String cpf, double valorHora, double quantidadeHora
         Colaborador objColaborador = new Colaborador();
 
         //String logradouro, int numero, String complemento, String cep, String bairro, String cidade, String estado
